@@ -34,7 +34,7 @@ public class DescriptionDetailsFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // This will be null when the app is first lauched.
+        // This will be null when the app is first launched.
         if (savedInstanceState != null){
             detailDescId = savedInstanceState.getInt("detailDescId");
         }
@@ -83,7 +83,7 @@ public class DescriptionDetailsFragment extends Fragment {
 
     // This will set the id on the list or index in the array
     // to retrieve the object instance from the array.
-    public void setDetailDescId(int id){
+    void setDetailDescId(int id){
         this.detailDescId = id;
     }
 

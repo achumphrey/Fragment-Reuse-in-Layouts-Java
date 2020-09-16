@@ -24,6 +24,8 @@ public class DetailsActivity extends AppCompatActivity {
                 .findFragmentById(R.id.fragmentDescDetail);
 
         int detaildescID = getIntent().getIntExtra(DESCID, 0);
-        newDescDetailFrag.setDetailDescId(detaildescID);
+
+        if (newDescDetailFrag != null)
+            newDescDetailFrag.setDetailDescId(detaildescID);
     }
 }

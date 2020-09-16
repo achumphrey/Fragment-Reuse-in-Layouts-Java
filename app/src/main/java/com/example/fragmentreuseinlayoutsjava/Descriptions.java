@@ -1,26 +1,26 @@
 package com.example.fragmentreuseinlayoutsjava;
 
-public class Descriptions {
+class Descriptions {
 
     private String name;
     private String desc;
     private int image;
 
-    public Descriptions(String name, String desc, int image) {
+    private Descriptions(String name, String desc, int image) {
         this.name = name;
         this.desc = desc;
         this.image = image;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public String getDesc() {
+    String getDesc() {
         return desc;
     }
 
-    public int getImage() {
+    int getImage() {
         return image;
     }
 
